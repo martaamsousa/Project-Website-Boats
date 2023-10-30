@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    background-color: #86F4F4;
+}
+
+header {
+    background-color: #FFFF;
+    text-transform: uppercase;
+    margin: 0 20px;
+    padding: 0.4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+a {
+    display: block;
+    font-family: 'Playfair Display SC', serif;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav li {
+    margin-right: 70px;
+}
+
+
+section {
+    text-align: center;
+    padding-top: 80px;
+}
+
+section h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+section h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 80px;
+    margin-top: 15px;
+}
+
+form {
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #D1FFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+}
+
+footer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #8E8E8E;
+    color: white;
+    padding: 10px;
+}
+
+.logo {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.contacts,
+.avaibility,
+.copyright {
+    flex: 1;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 20px;
+}
+
+.avaibility,
+.copyright {
+    text-align: right;
+    align-self: flex-end;
+}
+
+.avaibility {
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 11px;
+}
+
+.contacts {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 11px;
+}
+.copyright {
+    text-align: right;
+    font-size: 10px;
+}
+
+.fa-solid {
+    display: none;
+    font-size: 36px;
+    cursor: pointer;
+    color: #000000;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .fa-solid {
+        display: block;
+    }
+
+     nav ul {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mobile-menu a {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    footer {
+        flex-direction: column; 
+        text-align: center; 
+      }
+    
+      .contacts,
+      .avaibility {
+        display: none; 
+      }
+    }

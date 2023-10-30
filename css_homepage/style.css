@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    background-color: #86F4F4;
+}
+
+header {
+    background-color: #FFFF;
+    text-transform: uppercase;
+    margin: 0 20px;
+    padding: 0.4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+a {
+    display: block;
+    font-family: 'Playfair Display SC', serif;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav li {
+    margin-right: 70px;
+}
+
+
+section {
+    text-align: center;
+    padding-top: 100px;
+}
+
+section img {
+    width: 32em;
+}
+
+section h1 {
+    color: black;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    height: 2em;
+    position: fixed;
+    text-align: center;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #cef8f4;
+    margin-left: 210px;
+    margin-right: 210px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #8E8E8E;
+    color: white;
+    padding: 10px;
+    margin-top: 90px;
+}
+
+.logo {
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.contacts,
+.avaibility,
+.copyright {
+    max-width: 400px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.avaibility,
+.copyright {
+    text-align: right;
+    align-self: flex-end;
+}
+
+.avaibility {
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 11px;
+}
+
+.contacts {
+    margin-top: 5px;
+    margin-left: 80px;
+    font-size: 11px;
+}
+
+.copyright {
+    text-align: right;
+    font-size: 10px;
+}
+
+.fa-solid {
+    display: none;
+    font-size: 36px;
+    cursor: pointer;
+    color: #000000;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .fa-solid {
+        display: block;
+    }
+
+
+    nav ul {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-menu a {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contacts,
+    .avaibility {
+        display: none;
+    }
+}
